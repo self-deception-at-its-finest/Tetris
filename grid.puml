@@ -1,0 +1,18 @@
+@startuml
+class Grid {
+    - int num_rows
+    - int num_cols
+    - int cell_size
+    - list<list<int>> grid
+    - list colours
+    + Grid()
+    + draw(screen)
+    + is_inside(row: int, column: int): bool
+    + is_empy(row: int, column: int): bool
+    + clear_full_rows(): int
+    + is_row_full(row: int): bool
+    + clear_row(row: int)
+    + move_row_down(row: int, num_rows: int)
+    + reset()
+}
+@enduml

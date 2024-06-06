@@ -1,0 +1,24 @@
+@startuml classes
+set namespaceSeparator none
+class "Game" as game.Game {
+  current_tetromino
+  gameover : bool
+  grid : Grid
+  next_tetromino
+  paused : bool
+  score : int
+  tetrominoes : list
+  draw(screen)
+  get_random_tetromino()
+  lock_tetromino()
+  move_down()
+  move_left()
+  move_right()
+  pause()
+  reset()
+  rotate()
+  tetromino_fits()
+  tetromino_inside()
+  update_score(lines_cleared)
+}
+@enduml

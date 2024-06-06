@@ -1,0 +1,17 @@
+@startuml
+class Block {
+    - int id
+    - dict cells
+    - int cell_size
+    - int row_offset
+    - int column_offset
+    - int rotation_state
+    - list colors
+    + Block(int id)
+    + move(int rows, int columns)
+    + get_cell_positions() : list<Position>
+    + draw(screen, int offset_x, int offset_y)
+    + rotate()
+    + undo_rotation()
+}
+@enduml
